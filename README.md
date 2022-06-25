@@ -8,9 +8,10 @@ Restart Managerは本来Windowsの起動時や再起動時にアプリケーシ�
 実際に使用した例として、Wordファイルを削除しようとした際に以下の様に、ダイアログが表示されました。  
 ![screenshot](https://user-images.githubusercontent.com/80070644/175791202-57806996-044f-466f-9c33-c1b2c1a4e6c4.png)  
   
-その為、削除したいWordファイル名をサンプルコード内にある関数"ForceShutdown"に渡してやることにより、ファイルを開いているWINWORD.EXE(Microsoft Word)を終了させ、無事にファイルの削除をすることが出来た経験があります。
-<br>
-<br>
+その為、削除したいWordファイル名をサンプルコード内にある関数"ForceShutdown"に渡してやることにより、ファイルを開いているWINWORD.EXE(Microsoft Word)を終了させ、無事にファイルの削除をすることが出来た経験があります。  
+
+実際に使用する様子を以下に示します。  
+
 ## デモ  
 https://user-images.githubusercontent.com/80070644/175790872-79e0ed9b-ccc4-44fd-bdf2-5be919d35817.mp4
 
