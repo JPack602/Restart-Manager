@@ -14,14 +14,10 @@ int ForceShutdown(WCHAR* dest)
     // セッションキー(要初期化)
     WCHAR strSessionKey[CCH_RM_SESSION_KEY + 1];
 
-    // 現在時刻でseed値を設定
-    srand((unsigned)time(NULL));
-    // ループ回数を算出
     int len = sizeof(strSessionKey) / sizeof(strSessionKey[0]);
-    // ランダムな値(0 ~ 255)で初期化
-    for (int i = 0; i < len; ++i) {
-        strSessionKey[i] = 0;
-    }
+
+    // 初期化
+    memset(strSessionKey, 0x00, sizeof(WCHAR) * len);
 
     dwError = RmStartSession(
         &pSessionHandle,
